@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>In-Text Citations - thinkWrite (beta)</title>
+<meta name="description" content="Cited In-Text Citations correctly in literature papers on the Online English Writing Lab of Beijing Foreign Studies University.">
+<link href="styles/main.css" rel="stylesheet">
+<link href="styles/switch.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>thinkWrite (beta)</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> &nbsp;
+    <a href="Creative Thinking.html">Creative Thinking</a> &nbsp;
+    <a href="Critical Thinking.html">Critical Thinking</a> &nbsp;
+    <a href="MLA Style Guide.html" class="current">MLA Style Guide</a> &nbsp;
+    <a href="Experimental Tools.html">Experimental Tools</a>
+</nav>
+
+
+
+<showDetails>
+show details<br>
+<button class="showhideAndViewWithSwitch switch switchOn"></button>
+</showDetails>
+<div>
+    <h3>In-Text Citations</h3>
+
+    <dl>
+        <dt><strong>general principle</strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">Naomi Baron ... (194)</div></dd>
+        <dt><strong></strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">(Baron 194)</div></dd>
+        <dt><strong>more than one work under the author's name</strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">(Baron, "Redefining" 194)</div></dd>
+        <dt><strong>paragraph numbers, chapters, range of times</strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">(Chan, par.41)</div></dd>
+        <dt><strong></strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">(533; vol. 3, ch.17)</div></dd>
+        <dt><strong></strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">("Buffy" 00:03:16-17</div></dd>
+    <dl>
+
+    <citation><div class="hideAndViewWithSwitch" style="display: block">For more details, please refer to P 54, MLA Handbook, 8th ed.
+</div></citation>
+<footer>
+Copyright &copy; 2018-2019 thinkWrite (beta) for academic use only
+</footer>
+
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page loading time) -->
+<!-- BEGIN CORE PLUGINS -->   
+<script src="styles/jquery.min.js" type="text/javascript"></script>
+<script>
+$(".showhideAndViewWithSwitch").on("click",function(){
+var smBtn = $(this);
+if(smBtn.hasClass("switchOn")){
+smBtn.removeClass("switchOn");
+$(".hideAndViewWithSwitch").hide();
+initMasonry();
+}else{
+smBtn.addClass("switchOn");
+$(".hideAndViewWithSwitch").show();
+initMasonry();
+}
+});
+</script>
+
+</body>
+</html>

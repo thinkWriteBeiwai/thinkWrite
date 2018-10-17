@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Experimental Tools - thinkWrite (beta)</title>
+<meta name="description" content="Applications that can train your creativity and help you write more easily on the Online English Writing Lab of Beijing Foreign Studies University.">
+<link href="styles/main.css" rel="stylesheet">
+<link href="styles/switch.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>thinkWrite (beta)</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> &nbsp;
+    <a href="Creative Thinking.html">Creative Thinking</a> &nbsp;
+    <a href="Critical Thinking.html">Critical Thinking</a> &nbsp;
+    <a href="MLA Style Guide.html">MLA Style Guide</a> &nbsp;
+    <a href="Experimental Tools.html" class="current">Experimental Tools</a>
+</nav>
+
+
+
+<showDetails>
+show details<br>
+<button class="showhideAndViewWithSwitch switch switchOn"></button>
+</showDetails>
+<div>
+    <h3>yPDF</h3>
+
+    <dl>
+        <dt><strong>Introduction</strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">A Python application which replaces line feeds into spaces while coping English literature</div></dd>
+    <dl>
+
+    <citation><div class="hideAndViewWithSwitch" style="display: block"><a href="https://raw.githubusercontent.com/gaoyaoxin/yPDF/master/yPDF_lite_win_en.py">Download</a>
+</div></citation>
+<div>
+    <h3>wordPairs-aFifthWord</h3>
+
+    <dl>
+        <dt><strong>Introduction</strong></dt>
+        <dd><div class="hideAndViewWithSwitch" style="display: block">An application that could find a fifth word which can be paired with the four given words to form compounds, hyphenated words, or commonly used expressions.</div></dd>
+    <dl>
+
+    <citation><div class="hideAndViewWithSwitch" style="display: block"><a href="tools/wordPairs - Windows.7z">Download</a>
+</div></citation>
+<footer>
+Copyright &copy; 2018-2019 thinkWrite (beta) for academic use only
+</footer>
+
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page loading time) -->
+<!-- BEGIN CORE PLUGINS -->   
+<script src="styles/jquery.min.js" type="text/javascript"></script>
+<script>
+$(".showhideAndViewWithSwitch").on("click",function(){
+var smBtn = $(this);
+if(smBtn.hasClass("switchOn")){
+smBtn.removeClass("switchOn");
+$(".hideAndViewWithSwitch").hide();
+initMasonry();
+}else{
+smBtn.addClass("switchOn");
+$(".hideAndViewWithSwitch").show();
+initMasonry();
+}
+});
+</script>
+
+</body>
+</html>
